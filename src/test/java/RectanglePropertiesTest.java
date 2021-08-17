@@ -19,4 +19,17 @@ public class RectanglePropertiesTest {
         assertEquals(actualArea,expectedArea);
     }
 
+    @Test
+    public void toGetZeroWhenLengthEqualToZeroAndBreadthEqualToFive(){
+        int actualArea=rectangle.area(0,5);
+        int expectedArea=0;
+        assertEquals(actualArea,expectedArea);
+    }
+
+    @Test
+    public void toGetZeroWhenLengthEqualToFiveAndBreadthEqualToZero(){
+        int actualArea=rectangle.area(5,0);
+        int expectedArea=0;
+        assertEquals(actualArea,expectedArea);
+    }
 }
