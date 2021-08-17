@@ -74,4 +74,11 @@ public class RectanglePropertiesTest {
         int expectedPerimeterValue=0;
         assertEquals(actualPerimeterValue,expectedPerimeterValue);
     }
+
+    @Test
+    public void toGetZeroWhenAnyOneParameterIsNegative(){
+        int actualPerimeterValue=rectangle.perimeter(-5,4);
+        int expectedPerimeterValue=0;
+        assertEquals(actualPerimeterValue,expectedPerimeterValue);
+    }
 }
