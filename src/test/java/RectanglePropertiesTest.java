@@ -32,4 +32,18 @@ public class RectanglePropertiesTest {
         int expectedArea=0;
         assertEquals(actualArea,expectedArea);
     }
+
+    @Test
+    public void toGetZeroWhenLengthEqualToMinusFiveAndBreadthEqualToFive(){
+        int actualArea=rectangle.area(-5,5);
+        int expectedArea=0;
+        assertEquals(actualArea,expectedArea);
+    }
+
+    @Test
+    public void toGetZeroWhenLengthEqualToMinusFiveAndBreadthEqualToMinusFive(){
+        int actualArea=rectangle.area(-5,-5);
+        int expectedArea=0;
+        assertEquals(actualArea,expectedArea);
+    }
 }
