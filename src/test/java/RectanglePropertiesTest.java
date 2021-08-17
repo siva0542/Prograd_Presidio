@@ -46,4 +46,18 @@ public class RectanglePropertiesTest {
         int expectedArea=0;
         assertEquals(actualArea,expectedArea);
     }
+
+    @Test
+    public void toGetEighteenWhenLengthEqualToFiveAndBreadthEqualToFour(){
+        int actualPerimeterValue=rectangle.perimeter(5,4);
+        int expectedPerimeterValue=18;
+        assertEquals(actualPerimeterValue,expectedPerimeterValue);
+    }
+
+    @Test
+    public void toGetSixteenWhenLengthAndBreadthAreEqualToFour(){
+        int actualPerimeterValue=rectangle.perimeter(4,4);
+        int expectedPerimeterValue=16;
+        assertEquals(actualPerimeterValue,expectedPerimeterValue);
+    }
 }
